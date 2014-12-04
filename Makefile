@@ -99,3 +99,6 @@ check-coverity:
 
 check-pylint:
 	pylint --rcfile pylintrc *.py
+
+get-deps:
+	sudo apt-get install libasyncns-dev check memcached valgrind

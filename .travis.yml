@@ -1,0 +1,9 @@
+language: c
+compiler: gcc
+install: make get-deps
+
+script: make && make check check-valgrind
+
+env:
+  - WITHOUT_ASYNCNS=1
+  - WITHOUT_ASYNCNS=
